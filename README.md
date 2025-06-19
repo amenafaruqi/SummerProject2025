@@ -8,7 +8,7 @@
 - The `*dens*.dat` files contain density values in units of Msol/AU^2. The data is in an array with dimensions of (number of radial cells) x (number of azimuthal cells).
 - The `*vx*.dat` and `*vy*.dat` files contain velocity data. The data is in AU/yr. The vx data (azimuthal) will need the following reference frame transformation applied to it:
   ```
-  v_phi = v_phi (from file + (omegaframe*R)
+  v_phi = v_phi (from file) + omegaframe*R
   ```
   where `R` is the radial location and `omegaframe` is specified in the `variables.par` file.
 
